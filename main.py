@@ -28,7 +28,7 @@ with open("styles.css") as css:
     st.markdown(f"<style>{css.read()}</style>", unsafe_allow_html=True)
     
 # Configurando o objeto banco de dados
-banco = BancoDeDados('tabelas/vendas_bd.sqlite')
+banco = BancoDeDados('vendas_bd.sqlite')
 banco.conectar()
 banco.criar_tabela_produtos()
 banco.criar_tabela_vendas()
